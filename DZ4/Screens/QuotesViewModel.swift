@@ -6,8 +6,21 @@
 //
 
 import Foundation
-import Network
+import UDWrapper
 
 class QuotesViewModel: ObservableObject {    
     @Published var selectedAnime = "Naruto"
+    
+    @Injected
+    var userDefaults: UDWrapper?
+    
+    init() {
+        if let anime = userDefaults?.getLastSelectedAnime() {
+            selectedAnime = anime
+        }
+    }
+    
+    func saveAnime() {
+        userDefaults?.saveLastSelectedAnime(selectedAnime)
+    }
 }

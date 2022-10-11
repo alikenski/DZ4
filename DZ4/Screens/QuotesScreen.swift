@@ -10,6 +10,7 @@ import UI
 import ComposableArchitecture
 import Flux
 
+
 struct QuotesScreen: View {
     let store: Store<QuotesState, QuotesActions>
     @StateObject private var viewModel: QuotesViewModel = .init()
@@ -19,6 +20,7 @@ struct QuotesScreen: View {
             VStack {
                 AnimePicker(selected: $viewModel.selectedAnime)
                     .onChange(of: viewModel.selectedAnime) { newValue in
+                        viewModel.saveAnime()
                         viewStore.send(.selectAnime(newValue))
                         viewStore.send(.resetPageAndQuotes)
                         viewStore.send(.getQuotes)
@@ -39,6 +41,8 @@ struct QuotesScreen: View {
                 }
             }
             .onAppear {
+                viewStore.send(.selectAnime(viewModel.selectedAnime))
+                viewStore.send(.resetPageAndQuotes)
                 viewStore.send(.getQuotes)
             }
         }

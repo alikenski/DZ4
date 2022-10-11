@@ -6,12 +6,12 @@
 //
 
 import Foundation
-import UI
+import UDWrapper
 
 class ServiceConfigurator {
     static let shared = ServiceConfigurator()
     
     func register() {
-        ServiceLocator.shared.addServices(service: )
+        ServiceLocator.shared.addServices(service: UDWrapper())
     }
 }

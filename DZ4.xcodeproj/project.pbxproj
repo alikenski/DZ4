@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1830169028F5B6FB0090E728 /* UDWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 1830168F28F5B6FB0090E728 /* UDWrapper */; };
 		18A721BB28EDE39100B7E2A2 /* DZ4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A721BA28EDE39100B7E2A2 /* DZ4App.swift */; };
 		18A721BD28EDE39100B7E2A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A721BC28EDE39100B7E2A2 /* ContentView.swift */; };
 		18A721BF28EDE39300B7E2A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A721BE28EDE39300B7E2A2 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1830168E28F5B6250090E728 /* UDWrapper */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UDWrapper; sourceTree = "<group>"; };
 		18A721B728EDE39100B7E2A2 /* DZ4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DZ4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A721BA28EDE39100B7E2A2 /* DZ4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DZ4App.swift; sourceTree = "<group>"; };
 		18A721BC28EDE39100B7E2A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 				18B1D18028F4714E00CEAD74 /* ComposableArchitecture in Frameworks */,
 				18B1D17E28F4700C00CEAD74 /* Flux in Frameworks */,
 				18B1D18228F473D300CEAD74 /* Network in Frameworks */,
+				1830169028F5B6FB0090E728 /* UDWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +64,7 @@
 		18A721AE28EDE39100B7E2A2 = {
 			isa = PBXGroup;
 			children = (
+				1830168E28F5B6250090E728 /* UDWrapper */,
 				18B1D17928F4626B00CEAD74 /* Flux */,
 				18A721CD28EDE42C00B7E2A2 /* UI */,
 				18A721CC28EDE41900B7E2A2 /* Navigation */,
@@ -149,6 +153,7 @@
 				18B1D17D28F4700C00CEAD74 /* Flux */,
 				18B1D17F28F4714E00CEAD74 /* ComposableArchitecture */,
 				18B1D18128F473D300CEAD74 /* Network */,
+				1830168F28F5B6FB0090E728 /* UDWrapper */,
 			);
 			productName = DZ4;
 			productReference = 18A721B728EDE39100B7E2A2 /* DZ4.app */;
@@ -430,6 +435,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1830168F28F5B6FB0090E728 /* UDWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UDWrapper;
+		};
 		18A721CE28EDE44700B7E2A2 /* Navigation */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Navigation;

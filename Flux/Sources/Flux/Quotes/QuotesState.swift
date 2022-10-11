@@ -7,6 +7,7 @@
 
 import Foundation
 import Network
+import UDWrapper
 
 public struct QuotesState: Equatable {
     public init() {}
